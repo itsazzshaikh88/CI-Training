@@ -16,6 +16,7 @@ class CRUD extends CI_Controller
 
 	function add($id = null)
 	{
+		// Check method get/post
 		if ($this->input->method() == 'post') {
 			// Insert or Update
 			$this->CRUD_model->add();
